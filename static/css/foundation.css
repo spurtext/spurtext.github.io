@@ -5519,3 +5519,15 @@ th.hide-for-touch {
     font-size: 16px;
   }
 }
+
+@media (max-width: 600px) {
+  .footer-links {
+    order: 1;
+  }
+  .footer-logo-group {
+    order: 2;
+  }
+  .site-footer {
+    flex-direction: column;
+  }
+}
