@@ -1,2 +1,2 @@
-# spurtext-legal-docs
-spurtext-legal-documents
+# spurtext.github.io
+spurtext.github.io
