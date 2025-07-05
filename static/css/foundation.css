@@ -5777,3 +5777,14 @@ th.hide-for-touch {
   width: 100%;
   justify-content: center;
 }
+
+@media (max-width: 600px) {
+  .footer-logo {
+    height: 40px;
+    border-radius: 12px;
+    object-fit: contain;
+  }
+  .footer-appstore-badge img {
+    height: 28px;
+  }
+}
