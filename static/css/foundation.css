@@ -5813,3 +5813,30 @@ th.hide-for-touch {
   justify-content: center;
   gap: 12px;
 }
+
+@media (max-width: 600px) {
+  .aboutus-img-row {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 20px !important;
+  }
+  .aboutus-img-row img {
+    height: 140px !important;
+    width: auto !important;
+    max-width: 90vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .aboutus-img-row {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 20px !important;
+  }
+  .aboutus-img-row img {
+    width: 90vw !important;
+    height: auto !important;
+    max-width: 350px;
+    display: block;
+  }
+}
