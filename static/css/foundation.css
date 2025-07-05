@@ -5433,7 +5433,14 @@ th.hide-for-touch {
 
 @media (max-width: 900px) {
   .nav-list.menu-open li {
-    margin: 8px 0 !important; /* 缩小垂直间距 */
+    margin-bottom: 4px !important; /* 原来大约24px，缩小为三分之一 */
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+    border-bottom: none !important;
+    line-height: 1.2 !important;
+  }
+  .nav-list.menu-open li:last-child {
+    margin-bottom: 0 !important;
   }
 }
 
@@ -5838,5 +5845,26 @@ th.hide-for-touch {
     height: auto !important;
     max-width: 350px;
     display: block;
+  }
+}
+
+@media (max-width: 900px) {
+  .nav-list.menu-open {
+    gap: 0 !important;
+  }
+  .nav-list.menu-open li {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    line-height: 1 !important;
+    min-height: 0 !important;
+  }
+  .nav-list.menu-open li > a {
+    padding: 4px 0 !important;
+    margin: 0 !important;
+    line-height: 1.1 !important;
+    font-size: 18px !important;
+    min-height: 0 !important;
+    display: inline-block !important;
   }
 }
