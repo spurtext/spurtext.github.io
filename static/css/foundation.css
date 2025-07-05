@@ -5798,6 +5798,7 @@ th.hide-for-touch {
 @media (max-width: 600px) {
   .footer-copyright {
     font-size: 16px;
+    color: #bbb;
   }
 }
 
