@@ -5418,10 +5418,23 @@ th.hide-for-touch {
 
 @media (max-width: 900px) {
   .nav-list.menu-open {
-    height: calc(100vh - 390px) !important;
-    height: calc(100dvh - 390px) !important;
-    max-height: none !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 2000 !important;
+    background: #ff00ff !important;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding-top: 32px !important;
+    padding-bottom: 0 !important;
     min-height: 0 !important;
+    height: auto !important;
+    max-height: none !important;
+    justify-content: flex-start !important;
   }
 }
 
@@ -5906,5 +5919,13 @@ th.hide-for-touch {
     margin: 6px auto !important;
     background: #fff !important;
     border-radius: 3px;
+  }
+}
+
+@media (max-width: 900px) {
+  .nav-list.menu-open {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    justify-content: flex-start !important;
   }
 }
