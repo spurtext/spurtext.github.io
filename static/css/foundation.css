@@ -5419,15 +5419,18 @@ th.hide-for-touch {
 @media (max-width: 900px) {
   .nav-list.menu-open {
     display: flex !important;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column !important;
+    align-items: center !important;
     position: fixed !important;
-    top: 45px;
-    left: 0;
-    right: 0;
-    width: 100vw;
-    background: #FF00FF;
-    z-index: 2000;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 2000 !important;
+    max-height: calc(100vh - 390px) !important;
+    overflow-y: auto !important;
+    background: #ff00ff !important;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 }
 
@@ -5869,16 +5872,48 @@ th.hide-for-touch {
   }
 }
 
-.site-footer {
-  z-index: 0 !important;
-  position: relative !important;
+@media (max-width: 900px) {
+  .menu-icon {
+    position: fixed !important;
+    top: 24px !important;
+    right: 24px !important;
+    z-index: 3000 !important;
+    display: block !important;
+  }
 }
 
 @media (max-width: 900px) {
-  .nav-list.menu-open {
-    z-index: 2000 !important;
+  .top-bar {
+    height: 56px !important;
+    min-height: 56px !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+  .menu-icon {
     position: fixed !important;
-    left: 0; top: 0; right: 0; bottom: 0;
-    background: #ff00ff;
+    top: 12px !important; /* 56px高度居中，icon高32px */
+    right: 24px !important;
+    z-index: 3000 !important;
+    display: block !important;
+    height: 32px !important;
+    width: 40px !important;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 900px) {
+  .menu-icon {
+    height: 48px !important;
+    width: 48px !important;
+    top: 4px !important;
+    right: 16px !important;
+  }
+  .menu-icon span {
+    display: block;
+    height: 6px !important;
+    width: 32px !important;
+    margin: 6px auto !important;
+    background: #fff !important;
+    border-radius: 3px;
   }
 }
