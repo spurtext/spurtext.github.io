@@ -5418,19 +5418,10 @@ th.hide-for-touch {
 
 @media (max-width: 900px) {
   .nav-list.menu-open {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    position: fixed !important;
-    top: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    z-index: 2000 !important;
-    max-height: calc(100vh - 390px) !important;
-    overflow-y: auto !important;
-    background: #ff00ff !important;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+    height: calc(100vh - 390px) !important;
+    height: calc(100dvh - 390px) !important;
+    max-height: none !important;
+    min-height: 0 !important;
   }
 }
 
