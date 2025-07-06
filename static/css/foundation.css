@@ -5868,3 +5868,17 @@ th.hide-for-touch {
     display: inline-block !important;
   }
 }
+
+.site-footer {
+  z-index: 0 !important;
+  position: relative !important;
+}
+
+@media (max-width: 900px) {
+  .nav-list.menu-open {
+    z-index: 2000 !important;
+    position: fixed !important;
+    left: 0; top: 0; right: 0; bottom: 0;
+    background: #ff00ff;
+  }
+}
